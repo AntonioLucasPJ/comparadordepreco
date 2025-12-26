@@ -1,13 +1,9 @@
 * {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-main {
-  min-width: 900px;
-  background-color: aqua;
-  padding: 20px;
-  border-radius: 20px;
-}
 h1 {
   font-size: 3em;
   color: #3159ad;
@@ -18,8 +14,8 @@ h1 {
 }
 
 input {
-  width: 600px;
-  height: 50px;
+  width: 100%;
+  height: 40px;
   font-size: 15px;
   padding-left: 20px;
   border-radius: 20px;
@@ -31,7 +27,7 @@ input:focus {
   box-shadow: 0 0 5px rgb(83, 21, 128);
 }
 .btn_search { 
-  padding: 15px 20px;
+  padding: auto;
   background-color: rgb(100, 128, 179);
   color: #fff;
   border: none;
@@ -75,9 +71,9 @@ input:focus {
 .Product_list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  padding: 40px ;
+  padding: 10px ;
   margin-top: 10px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .Content {

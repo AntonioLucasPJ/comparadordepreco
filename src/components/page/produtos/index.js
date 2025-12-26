@@ -45,7 +45,7 @@ export function Pageprodutos() {
                                 <span className={styles.loader_text}></span>
                             </div>
                         </div>
-                    ) || <span><i class="fa-solid fa-magnifying-glass"></i> Pesquisar</span>}
+                    ) || <span><i className="fa-solid fa-magnifying-glass"></i> Pesquisar</span>}
                     
                 </button>
             </div>

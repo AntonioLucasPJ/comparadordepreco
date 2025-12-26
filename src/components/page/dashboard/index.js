@@ -15,7 +15,7 @@ export function Windowsdash() {
             try {
                 const dados = await api()
                 setprodutos(dados)
-                console.log(dados)
+                
             } catch (error) {
                 seterror(error)
             } 

@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "1.13.2",
     "chart.js": "^4.5.1",
+    "chartjs": "^0.3.24",
     "cors": "^2.8.5",
     "react": "^19.2.3",
     "react-chartjs-2": "^5.3.1",
