@@ -11,6 +11,7 @@ import { ErrorPage } from './components/page/ErrorPage';
 import { Pageprodutos } from './components/page/produtos';
 import { Notificacoes } from './components/page/notificacoes';
 import { Imagem } from './components/page/image';
+import { Configuracoes } from './components/page/configuracoes';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path:"/imagens",
         element:<Imagem></Imagem>
+      },
+      {
+        path:"/configuracoes",
+        element:<Configuracoes></Configuracoes>
       }
     ]
   }

@@ -75,12 +75,12 @@ export function Nav() {
                             </Link>
                         </li>
                         <li className={styles.sideitem}>
-                            <a href='#'>
+                            <Link to='/configuracoes' >
                                 <i className="fa-solid fa-gear"></i>
                                 <span className={styles.item_description}>
                                     Configurações
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <button className={styles.open_btn}

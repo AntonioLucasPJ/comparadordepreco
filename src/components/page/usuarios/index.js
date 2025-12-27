@@ -17,7 +17,7 @@ export function Usuarios() {
             <div className={styles.content}>
                 <div>
                     <button className={styles.btn_set}>
-                        <i class="fa-solid fa-angle-left"></i>
+                        <i className="fa-solid fa-angle-left"></i>
                     </button>
                 </div>
                 <div className={styles.card}>
@@ -35,7 +35,7 @@ export function Usuarios() {
                 </div>
                 <div>
                     <button className={styles.btn_set}>
-                        <i class="fa-solid fa-angle-right"></i>
+                        <i className="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
             </div>

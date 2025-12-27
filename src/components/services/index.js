@@ -2,7 +2,6 @@
 import axios from 'axios'
 export async function api(produto) {
     let link = ''
-
     if(produto){
         link = `https://apiproduto.vercel.app/produtos?categoria=${produto}`
     } else {
@@ -26,7 +25,8 @@ export async function apipost(produto,categoria,preco,fornecedor,link,img1,img2)
     },
     axiosConfig)
     .then(function(response){
-        console.log(response.status)
+        console.log(`Dados enviados para API Status:${response.status}`)
+        alert("Produto Cadastro com sucesso!!")
     })
     .catch(function (error){
         console.log(error)
