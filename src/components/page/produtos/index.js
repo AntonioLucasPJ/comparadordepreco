@@ -10,19 +10,19 @@ export function Pageprodutos() {
 
     const isFirstRun = useRef(true)
     async function chamadaapi() {
-        console.log(carregando)
+        
         //Função trim simplismente remove os spacos caso existam no codigo
         const termo = valor.trim()
-        if (!termo) {
-            seterror('Preencha o campo e clique em pesquisar')
-            return;
-        }
-        seterror("")
+        // if (!termo) {
+        //     seterror('Preencha o campo e clique em pesquisar')
+        //     return;
+        // }
+        // seterror("")
         try {
             setcarregando(true)
-            const dados = await api(termo)
+            const dados = await api(termo?termo:'')
             setprodutos(dados)
-            console.log("Buca concluida")
+            
         } catch (error) {
             seterror(error)
         } finally {
@@ -30,10 +30,12 @@ export function Pageprodutos() {
         }
     }
     return (
-        <main>
+        <main className={styles.mainproduto}>
             <h1>Comparador de preco</h1>
-            <div className={styles.Content}>
-                <input
+            <div 
+                className={styles.Content}>
+                <input 
+                    className={styles.inputsearch}
                     onKeyDown={(e) => e.key == 'Enter' ? chamadaapi() : ''}
                     onChange={(e) => setvalor(e.target.value)} placeholder="Exemplo:Briquedos...."></input>
                 <button
@@ -49,7 +51,7 @@ export function Pageprodutos() {
                     
                 </button>
             </div>
-            {error && <p style={{ display: "flex", justifyContent: "center", color: '#ff0000ff' }}>{error}</p>}
+            {/* {error && <p style={{ display: "flex", justifyContent: "center", color: '#ff0000ff' }}>{error}</p>} */}
             <div className={styles.Product_list} key={produtos.id}>
                 {produtos.map(item => (
                     <Produtos produto={item.produto}

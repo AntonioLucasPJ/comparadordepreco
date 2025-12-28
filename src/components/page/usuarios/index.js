@@ -9,7 +9,7 @@ export function Usuarios() {
         navigate("/")
     }
     return (
-        <main>
+        <main className={styles.usuariomain}>
             <h2>Tela de Usuarios</h2>
             <div className={styles.container}>
                 <img src={img1} className={styles.imgproduto}></img>

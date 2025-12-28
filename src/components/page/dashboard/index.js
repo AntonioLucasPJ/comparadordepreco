@@ -28,7 +28,7 @@ export function Windowsdash() {
         return nagivate("/")
     }
     return (
-        <main>
+        <main className={styles.maindash}>
             <div className={styles.container}>
                 <h2>Tela de Dashboard</h2>
                 <div className={styles.content}>
